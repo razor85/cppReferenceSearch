@@ -15,5 +15,5 @@
     <Param name="namespace" value="0"/>
     <Param name="suggest" value="1"/>
   </Url> 
-  <moz:SearchForm>https://example.com/search</moz:SearchForm>
+  <moz:SearchForm>https://cppreference.com</moz:SearchForm>
 </OpenSearchDescription>
