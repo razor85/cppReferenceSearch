@@ -1,0 +1,19 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+                       xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>cppreference</ShortName>
+  <Description>Search in cppreference.com</Description>
+  <InputEncoding>UTF-8</InputEncoding>
+  <Image width="16" height="16" type="image/x-icon">https://en.cppreference.com/favicon.ico</Image>
+  <Url type="text/html" template="https://en.cppreference.com/mwiki/index.php">
+    <Param name="title" value="Special:Search"/>
+    <Param name="search" value="{searchTerms}"/>
+  </Url>
+  <Url type="application/x-suggestions+json" template="https://en.cppreference.com/mwiki/api.php">
+    <Param name="format" value="json"/>
+    <Param name="action" value="opensearch"/>
+    <Param name="search" value="{searchTerms}"/>
+    <Param name="namespace" value="0"/>
+    <Param name="suggest" value="1"/>
+  </Url> 
+  <moz:SearchForm>https://example.com/search</moz:SearchForm>
+</OpenSearchDescription>
